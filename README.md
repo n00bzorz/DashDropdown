@@ -7,10 +7,6 @@ Dropdown menu for dashboards using DataviewJS
 Wanted a drop down menu for my dashboard so I used chat GPT to create this query and a css snippet to style it. I’m sure the query could be simplified or there is a better way to do this but it works and links to the pages AND it’s all updated automatically.
 
 
-
-r/ObsidianMD - dynamic dropdown menu for dashboards.
-Outputs these detail/summary dropdowns that then have nested tables with clickable links. (the columns are bit generated.)
-
 **DataviewJS Query**
 
 ```dataviewJS
