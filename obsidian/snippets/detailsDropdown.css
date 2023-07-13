@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  background-color: #424741;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+  list-style: none;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+details summary::-webkit-details-marker {
+  color: transparent;
+  transform: scale(0.01);
+}
+
+details summary::before {
+  content: '🡵';
+  display: inline-block;
+  font-size: 0.9em;
+  margin-right: 8px;
+  transform: translateY(-1px);
+}
+
+details[open] {
+  background-color: var(--background-secondary);
+}
+
+details[open] summary {
+  margin-bottom: 8px;
+}
+
+details[open] summary::before {
+  transform: translateY(-1px) rotate(90deg);
+}
+
+details[open] summary:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ccc;
+}
+
+summary::marker {
+  content: "";
+}
+
+details > * {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+details summary:hover::before {
+  content: "";
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: bg-move 2s linear infinite;
+  background-size: 100% 8px;
+  background-image: linear-gradient(0, rgba(255, 255, 255, 0.05) 10%, transparent 10%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 60%, transparent 60%, transparent);
+}
+
+@keyframes bg-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -32px;
+  }
+}
+
+.heading-collapse-indicator,
+.cm-fold-indicator .collapse-indicator {
+  opacity: 0 !important;
+}
+
+details summary::-webkit-details-marker {
+  font-size: 0.001px;
+}
+
+details > summary {
+  list-style: none;
+}
+
+
+/* Set the maximum width for all table columns */
+.dropdowntable table {
+  table-layout: fixed;
+}
+
+/* Set the maximum width for each individual table column */
+.dropdowntable table td,
+table th {
+  max-width: 170px; /* Adjust the value as per your requirement */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
