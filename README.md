@@ -6,6 +6,7 @@ Dropdown menu for dashboards using DataviewJS
 
 Wanted a drop down menu for my dashboard so I used chat GPT to create this query and a css snippet to style it. I’m sure the query could be simplified or there is a better way to do this but it works and links to the pages AND it’s all updated automatically.
 
+![image](https://github.com/n00bzorz/DashDropdown/assets/117250339/7028dc1b-8a78-47d3-a479-d1307b639892)
 
 **DataviewJS Query**
 
